@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39DF7D83-3437-4B5E-9342-065B27F5A70A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyMovieApp</RootNamespace>
+    <AssemblyName>MyMovieApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAllMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAllMovies.Designer.cs">
+      <DependentUpon>FormAllMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFollower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFollower.Designer.cs">
+      <DependentUpon>FormFollower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFollowing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFollowing.Designer.cs">
+      <DependentUpon>FormFollowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenre.Designer.cs">
+      <DependentUpon>FormGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenreEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenreEdit.Designer.cs">
+      <DependentUpon>FormGenreEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenreList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenreList.Designer.cs">
+      <DependentUpon>FormGenreList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenre_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGenre_User.Designer.cs">
+      <DependentUpon>FormGenre_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainPage.Designer.cs">
+      <DependentUpon>FormMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovie.Designer.cs">
+      <DependentUpon>FormMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovieEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovieEdit.Designer.cs">
+      <DependentUpon>FormMovieEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovieList.Designer.cs">
+      <DependentUpon>FormMovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowWatchedMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowWatchedMovies.Designer.cs">
+      <DependentUpon>FormShowWatchedMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShowWatchlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShowWatchlist.Designer.cs">
+      <DependentUpon>FormShowWatchlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTop10Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTop10Movies.Designer.cs">
+      <DependentUpon>FormTop10Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTop25Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTop25Movies.Designer.cs">
+      <DependentUpon>FormTop25Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserEdit.Designer.cs">
+      <DependentUpon>FormUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserList.Designer.cs">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserMainPage.Designer.cs">
+      <DependentUpon>FormUserMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserRegister.Designer.cs">
+      <DependentUpon>FormUserRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewComment.Designer.cs">
+      <DependentUpon>FormViewComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWatchedMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWatchedMovies.Designer.cs">
+      <DependentUpon>FormWatchedMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWatchlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWatchlist.Designer.cs">
+      <DependentUpon>FormWatchlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDatabase.cs" />
+    <Compile Include="MOVIEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIEDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MySqlConnection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAllMovies.resx">
+      <DependentUpon>FormAllMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFollower.resx">
+      <DependentUpon>FormFollower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFollowing.resx">
+      <DependentUpon>FormFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenre.resx">
+      <DependentUpon>FormGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenreEdit.resx">
+      <DependentUpon>FormGenreEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenreList.resx">
+      <DependentUpon>FormGenreList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenre_User.resx">
+      <DependentUpon>FormGenre_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainPage.resx">
+      <DependentUpon>FormMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovie.resx">
+      <DependentUpon>FormMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovieEdit.resx">
+      <DependentUpon>FormMovieEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovieList.resx">
+      <DependentUpon>FormMovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowWatchedMovies.resx">
+      <DependentUpon>FormShowWatchedMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShowWatchlist.resx">
+      <DependentUpon>FormShowWatchlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTop10Movies.resx">
+      <DependentUpon>FormTop10Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTop25Movies.resx">
+      <DependentUpon>FormTop25Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserEdit.resx">
+      <DependentUpon>FormUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserList.resx">
+      <DependentUpon>FormUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserMainPage.resx">
+      <DependentUpon>FormUserMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserRegister.resx">
+      <DependentUpon>FormUserRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewComment.resx">
+      <DependentUpon>FormViewComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWatchedMovies.resx">
+      <DependentUpon>FormWatchedMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWatchlist.resx">
+      <DependentUpon>FormWatchlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MOVIEDataSet.xsc">
+      <DependentUpon>MOVIEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet.xss">
+      <DependentUpon>MOVIEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet1.xsc">
+      <DependentUpon>MOVIEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet1.xss">
+      <DependentUpon>MOVIEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet10.xsc">
+      <DependentUpon>MOVIEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet10.xss">
+      <DependentUpon>MOVIEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet11.xsc">
+      <DependentUpon>MOVIEDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet11.xss">
+      <DependentUpon>MOVIEDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet21.xsc">
+      <DependentUpon>MOVIEDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet21.xss">
+      <DependentUpon>MOVIEDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet31.xsc">
+      <DependentUpon>MOVIEDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet31.xss">
+      <DependentUpon>MOVIEDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet4.xsc">
+      <DependentUpon>MOVIEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet4.xss">
+      <DependentUpon>MOVIEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet5.xsc">
+      <DependentUpon>MOVIEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet5.xss">
+      <DependentUpon>MOVIEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet6.xsc">
+      <DependentUpon>MOVIEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet6.xss">
+      <DependentUpon>MOVIEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet7.xsc">
+      <DependentUpon>MOVIEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet7.xss">
+      <DependentUpon>MOVIEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet8.xsc">
+      <DependentUpon>MOVIEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet8.xss">
+      <DependentUpon>MOVIEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet9.xsc">
+      <DependentUpon>MOVIEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="MOVIEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOVIEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOVIEDataSet9.xss">
+      <DependentUpon>MOVIEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_7TI6X2x5_1699007436107_raw.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
